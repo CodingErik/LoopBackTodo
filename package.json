@@ -1,0 +1,23 @@
+{
+  "name": "LoopBackTodo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodingErik/LoopBackTodo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodingErik/LoopBackTodo/issues"
+  },
+  "homepage": "https://github.com/CodingErik/LoopBackTodo#readme",
+  "dependencies": {
+    "@loopback/cli": "^2.17.0"
+  }
+}
