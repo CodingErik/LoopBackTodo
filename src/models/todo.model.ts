@@ -1,23 +1,30 @@
 import {Entity, model, property} from '@loopback/repository';
 
+// these will be our routes for the the API 
 @model()
 export class Todo extends Entity {
   @property({
-    type: 'string',
+    type: 'number',
     id: true,
-    generated: true,
+    generated: false,
   })
-  title?: string;
+  id?: number;
 
   @property({
-    type: 'boolean',
+    type: 'string',
+    required: true,
   })
-  isComplete?: boolean;
+  title: string;
 
   @property({
     type: 'string',
   })
   desc?: string;
+
+  @property({
+    type: 'boolean',
+  })
+  isComplete?: boolean;
 
 
   constructor(data?: Partial<Todo>) {
